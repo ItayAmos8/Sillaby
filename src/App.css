@@ -1,38 +1,30 @@
-.App {
-  text-align: center;
+.top-bar {
+    filter: drop-shadow(0px 20px 10px rgba(0, 0, 0, 0.05));
+    background-color: #707070;
+    /*    make it flex in row direction*/
+
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.all-icons {
+    display: flex;
+    flex-direction: row; /* סידור בשורה */
+    justify-content: space-between; /* ריווח שווה בין הרכיבים */
+    align-items: center; /* יישור אנכי */
+    margin-right: 100px;
+    direction: rtl; /* כדי לתמוך בשפה מימין לשמאל */
+    gap: 10px; /* ריווח קבוע בין פריטים */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.top-bar-fonts {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    font-style: normal;
+    text-align: right;
+    color: #ffffff;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.new-syllabus-btn {
+    text-decoration: none;
 }
