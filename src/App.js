@@ -64,17 +64,22 @@ import "react-datepicker/dist/react-datepicker.css";
 import "./App.css";
 import LecturerPage from "./pages/lecturer-page";
 import CreateSylabi from "./pages/create-syllabi";
+import Bibliography from "./pages/Bibliography";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Link } from "react-router-dom";
 import home_icon from "./Icons/top_icons/home_icon.png";
 import person_icon from "./Icons/top_icons/account_circle_FILL0.png";
 import notification_icon from "./Icons/top_icons/notifications_FILL0_.png";
+
+
 function App() {
     return (
+
+
         <Router>
             <nav>
                 <header className="top-bar">
-                    <div className= "all-icons">
+                    <div className="all-icons">
 
                         <button className="home-icon">
                             <img src={home_icon} alt="Logo"/>
@@ -93,12 +98,14 @@ function App() {
                         <div className="top-bar-fonts">התראות</div>
                         <Link to="/create-syllabi">Create Syllabi</Link>
                         <Link to="/lecturer-page">Lecturer Page</Link>
+                        <Link to="/Bibliography">Bibi </Link>
                     </div>
                 </header>
 
             </nav>
             <Routes>
                 {/*<Route path="/" element={<Home />} />*/}
+                <Route path="/Bibliography" element={<Bibliography />} />
                 <Route path="/create-syllabi" element={<CreateSylabi />} />
                 <Route path="/lecturer-page" element={<LecturerPage />} />
             </Routes>

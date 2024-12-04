@@ -22,7 +22,7 @@ function App() {
                         <div className="list-divider"></div>
                         <div className="list-item">ארכיון</div>
                         <div className="list-divider"></div>
-                        <div className="list-item">שניר פרימוביץ פח אשפה</div>
+                        <div className="list-item"> פח אשפה</div>
                     </div>
                 </div>
                 <div className="left-container">

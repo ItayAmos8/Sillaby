@@ -1,0 +1,103 @@
+.instructorSection {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 20px 10px rgba(0, 0, 0, 0.051);
+  padding: 13px 37px 42px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.sectionTitle {
+  font-size: 35px;
+  font-weight: 300;
+  color: #707070;
+  text-align: right;
+  margin-bottom: 36px;
+}
+
+.detailsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.contactInfo {
+  display: flex;
+  gap: 27px;
+  flex-wrap: wrap;
+}
+
+.field {
+  flex: 1;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.input {
+  width: 100%;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.19px;
+  color: #707070;
+  border: none;
+  background: transparent;
+  text-align: right;
+  padding: 5px 0;
+}
+
+.input:focus {
+  outline: none;
+  border-bottom: 2px solid #23c74f;
+}
+
+.label {
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: 0.47px;
+  color: #707070;
+  margin-top: 5px;
+}
+
+.officeHours {
+  margin-top: 72px;
+}
+
+.subTitle {
+  font-size: 35px;
+  font-weight: 300;
+  color: #707070;
+  text-align: right;
+  margin-bottom: 31px;
+}
+
+.scheduleInput {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #e3e3e3;
+  cursor: pointer;
+}
+
+.checkbox[aria-checked="true"] {
+  background-color: #23c74f;
+  border-color: #23c74f;
+}
+
+@media (max-width: 991px) {
+  .instructorSection {
+    padding: 13px 20px 42px;
+  }
+
+  .contactInfo {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
