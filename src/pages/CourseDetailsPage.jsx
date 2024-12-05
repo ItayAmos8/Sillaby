@@ -2,7 +2,7 @@ import React from "react";
 import { CourseHeader } from "./CourseHeader";
 import { InstructorDetails } from "./InstructorDetails";
 import { CourseContent } from "./CourseContent";
-import { Bibliography } from "./Bibliography";
+import Bibliography from "./Bibliography";
 import styles from "../styles/CourseDetailsPage.module.css";
 
 export const CourseDetailsPage = () => {

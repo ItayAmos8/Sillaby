@@ -29,13 +29,14 @@ export const InstructorDetails = ({ email, name, officeHours, schedule }) => {
         <div className={styles.officeHours}>
           <h3 className={styles.subTitle}>שעות קבלה</h3>
           <div className={styles.scheduleInput}>
+            <div className={styles.checkbox} role="checkbox" tabIndex="0"/>
+
             <input
-              type="text"
-              value={officeHours}
-              className={styles.input}
-              aria-label="שעות קבלה"
+                type="text"
+                value={officeHours}
+                className={styles.input}
+                aria-label="שעות קבלה"
             />
-            <div className={styles.checkbox} role="checkbox" tabIndex="0" />
           </div>
         </div>
       </div>
