@@ -8,6 +8,7 @@ import {ExamCard} from "../ExemCard/ExamCard";
 import {SearchBox} from "../SearchDate/searchBox";
 import {DateFilter} from "../SearchDate/DateFilters";
 
+
 function App() {
     const [selectedDate, setSelectedDate] = useState(null);
     const [showCalendar, setShowCalendar] = useState(false);
@@ -64,6 +65,7 @@ function App() {
                                 {selectedDate.toLocaleDateString("he-IL")}
                             </div>
                         )}
+
                 </div>
                 <div className="cards-container">
                     <ExamCard></ExamCard>
@@ -78,6 +80,7 @@ function App() {
                     <ExamCard></ExamCard>
                 </div>
             </div>
+
         </div>
 
 </div>
