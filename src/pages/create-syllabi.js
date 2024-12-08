@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/create-syllabi.css";
 import Path_comment_multi from "../Icons/notifictions_componnent_icons/Path _ comment-multi.png"
+import styles from "../styles/CourseHeader.module.css";
 
 function createSyllabi() {
     return (
@@ -19,6 +20,8 @@ function createSyllabi() {
                             <img src={Path_comment_multi} className="image" alt="asd"></img>
 
                         </button>
+                        <div className={styles.verticalAlign}></div>
+
                     </div>
                 </div>
                 <div className="list-divider"></div>
