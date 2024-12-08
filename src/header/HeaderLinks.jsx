@@ -18,6 +18,8 @@ export const HeaderLinks = () => {
                     <Link to="/create-syllabi">Create Syllabi</Link>
                     {/*TODO להוסיף את הלינקים האלה לHEADER*/}
                 </div>
+                <div className={styles.divider} role="separator"/>
+                <Link to={"/examCard"}>Exam Card</Link>
             </div>
         </div>
     );

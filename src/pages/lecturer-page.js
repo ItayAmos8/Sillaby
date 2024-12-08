@@ -4,12 +4,16 @@ import "react-datepicker/dist/react-datepicker.css";
 import "../styles/lecturer-page.css";
 import img from "../assets/img.png";
 import {Link} from "react-router-dom";
+import {ExamCard} from "../ExemCard/ExamCard";
+import {SearchBox} from "../SearchDate/searchBox";
+import {DateFilter} from "../SearchDate/DateFilters";
 
 function App() {
     const [selectedDate, setSelectedDate] = useState(null);
     const [showCalendar, setShowCalendar] = useState(false);
     return (
         <div className="app-container">
+
             <div className="container">
                 <div className="right-container">
                     <button className="new-syllabus-btn">
@@ -60,47 +64,25 @@ function App() {
                                 {selectedDate.toLocaleDateString("he-IL")}
                             </div>
                         )}
-                    </div>
-                    <div className="cards-container">
-                        <div className="syllabus-card">
-                            <div className="name">
-                                <h3>קורס ניתוח מערכות</h3>
-                                <p style={{ marginTop: '-10px' }}>15.05.2022</p>
-                            </div>
-                            <div className="name">ד"ר יריב איצקוביץ</div>
-                            <div className="name">מדעי הרוח והחברה</div>
-                            <div className="status status-approved">מאושר</div>
-                            <img className="image" src={img} alt={" "}/>
-                        </div>
-                    </div>
-                    <div className="cards-container">
-                        <div className="syllabus-card">
-                            <div className="name">
-                                <h3>קורס ניתוח מערכות</h3>
-                                <p style={{ marginTop: '-10px' }}>15.05.2022</p>
-                            </div>
-                            <div className="name">ד"ר יריב איצקוביץ</div>
-                            <div className="name">מדעי הרוח והחברה</div>
-                            <div className="status status-pending">בהמתנה</div>
-                            <img className="image" src={img} alt={" "}/>
-                        </div>
-                    </div>
-                    <div className="cards-container">
-                        <div className="syllabus-card">
-                            <div className="name">
-                                <h3>קורס ניתוח מערכות</h3>
-                                <p style={{ marginTop: '-10px' }}>15.05.2022</p>
-                            </div>
-                            <div className="name">ד"ר יריב איצקוביץ</div>
-                            <div className="name">מדעי הרוח והחברה</div>
-                            <div className="status status-approved">מאושר</div>
-                            <img className="image" src={img} alt={" "}/>
-                        </div>
-                    </div>
+                </div>
+                <div className="cards-container">
+                    <ExamCard></ExamCard>
+                </div>
+                <div className="cards-container">
+                    <ExamCard></ExamCard>
+                </div>
+                <div className="cards-container">
+                    <ExamCard></ExamCard>
+                </div>
+                <div className="cards-container">
+                    <ExamCard></ExamCard>
                 </div>
             </div>
         </div>
-    );
+
+</div>
+)
+    ;
 }
 
 export default App;
