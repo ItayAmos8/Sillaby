@@ -10,7 +10,7 @@ function lecturerDataEntryComplete() {
     return (
         <div>
 
-            <CourseDetailsPage/>
+            <CourseDetailsPage />
             {/*<CourseHeader/>*/}
             {/*<CourseContent/>*/}
             {/*<InstructorDetails/>*/}

@@ -5,8 +5,8 @@ import "../styles/lecturer-page.css";
 import img from "../assets/img.png";
 import {Link} from "react-router-dom";
 import {ExamCard} from "../ExemCard/ExamCard";
-import {SearchBox} from "../SearchDate/searchBox";
-import {DateFilter} from "../SearchDate/DateFilters";
+// import {SearchBox} from "../SearchDate/searchBox";
+// import {DateFilter} from "../SearchDate/DateFilters";
 
 
 function App() {
@@ -66,26 +66,26 @@ function App() {
                             </div>
                         )}
 
+                    </div>
+                    <div className="cards-container">
+                        <ExamCard></ExamCard>
+                    </div>
+                    <div className="cards-container">
+                        <ExamCard></ExamCard>
+                    </div>
+                    <div className="cards-container">
+                        <ExamCard></ExamCard>
+                    </div>
+                    <div className="cards-container">
+                        <ExamCard></ExamCard>
+                    </div>
                 </div>
-                <div className="cards-container">
-                    <ExamCard></ExamCard>
-                </div>
-                <div className="cards-container">
-                    <ExamCard></ExamCard>
-                </div>
-                <div className="cards-container">
-                    <ExamCard></ExamCard>
-                </div>
-                <div className="cards-container">
-                    <ExamCard></ExamCard>
-                </div>
+
             </div>
 
         </div>
-
-</div>
-)
-    ;
+    )
+        ;
 }
 
 export default App;

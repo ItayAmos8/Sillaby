@@ -2,8 +2,10 @@
   background-color: #fff;
   border-radius: 5px;
   box-shadow: 0 20px 10px rgba(0, 0, 0, 0.051);
-  padding: 13px 37px 42px;
+  padding: 0px 37px 42px;
   margin-bottom: 30px;
+  /*margin-top: 20px;*/
+  border:none;
   position: relative;
 }
 

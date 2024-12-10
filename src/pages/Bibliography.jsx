@@ -2,7 +2,7 @@ import React from "react";
 import styles from "../styles/Bibliography.module.css";
 
 const BibliographyItem = ({ citation, number, onEdit, onDelete }) => (
-    <div className={styles.bibliographyItem}>
+    <div id = "bibi" className={styles.bibliographyItem}>
         <div className={styles.actions}>
             <button onClick={onDelete} className={styles.actionButton} aria-label="מחק">
                 <img
