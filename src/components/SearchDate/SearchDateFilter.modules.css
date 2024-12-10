@@ -1,0 +1,140 @@
+.container {
+  display: flex;
+  align-items: center;
+  gap: 40px 75px;
+  font-family: Rubik, sans-serif;
+  color: rgba(112, 112, 112, 1);
+  text-align: right;
+  justify-content: start;
+  flex-wrap: wrap;
+}
+
+.dateFilterContainer {
+  align-self: stretch;
+  display: flex;
+  min-width: 240px;
+  align-items: start;
+  gap: 40px 73px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.13px;
+  line-height: 2;
+  flex-wrap: wrap;
+  width: 511px;
+  margin: auto 0;
+  padding: 2px 0;
+}
+
+.dateRangeWrapper {
+  display: flex;
+  gap: 15px;
+  flex-grow: 1;
+  flex-basis: auto;
+}
+
+.calendarIcon {
+  aspect-ratio: 0.91;
+  object-fit: contain;
+  object-position: center;
+  width: 20px;
+}
+
+.dateInputGroup {
+  align-self: start;
+  display: flex;
+  align-items: start;
+  gap: 7px;
+  flex-grow: 1;
+  flex-basis: auto;
+}
+
+.dateSeparator {
+  margin-top: 19px;
+  width: 127px;
+  height: 1px;
+  border: 1px solid rgba(112, 112, 112, 1);
+}
+
+.filterIcon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  width: 23px;
+  margin-top: 4px;
+}
+
+.searchContainer {
+  align-self: stretch;
+  display: flex;
+  min-width: 240px;
+  flex-direction: column;
+  overflow: hidden;
+  font-size: 16px;
+  font-weight: 400;
+  white-space: nowrap;
+  letter-spacing: 0.53px;
+  line-height: 1;
+  width: 241px;
+  margin: auto 0;
+}
+
+.searchBox {
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 1);
+  display: flex;
+  width: 100%;
+  gap: 20px;
+  justify-content: space-between;
+  padding: 10px 12px;
+}
+
+.searchIcon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  width: 14px;
+  margin: auto 0;
+}
+
+.searchInputWrapper {
+  display: flex;
+  align-items: start;
+  gap: 13px;
+}
+
+.searchInputIcon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  width: 23px;
+}
+
+@media (max-width: 991px) {
+  .dateFilterContainer {
+    max-width: 100%;
+  }
+
+  .searchContainer {
+    white-space: initial;
+  }
+
+  .searchBox {
+    white-space: initial;
+  }
+
+  .searchInputWrapper {
+    white-space: initial;
+  }
+}
+
+.visuallyHidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
