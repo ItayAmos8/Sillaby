@@ -1,0 +1,42 @@
+.top-menu{
+    width: 1920px;
+    height: 110px;
+    filter: drop-shadow(0px 20px 10px rgba(0,0,0,0.05 ));
+    background: #c9c9c9;
+}
+.top-button {
+    border: none; /* הסרת גבול */
+    padding: 10px 20px; /* הוספת מרווח פנימי */
+    font-size: 16px; /* גודל טקסט */
+    cursor: pointer; /* שינוי לסמן יד */
+    background-color: transparent;
+    direction: ltr;
+    /*margin-right:50px;*/
+    color:#707070;
+}
+.image{
+    margin-left:5px ;
+    width: 20.3px;
+    height: 20.3px;
+}
+.list-divider {
+    height: 1px;
+    background-color: #707070;
+    margin-left: 20%;
+}
+.inside-menu{
+    margin-right: 100px;
+}
+.status{
+    font-family: "Rubik", serif;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 22px;
+    font-style: normal;
+    text-align: center;
+    color: white;
+    background-color: #707070;
+    border-radius: 40px;
+    height: 22px;
+    width: 57px;
+}

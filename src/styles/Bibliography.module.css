@@ -1,0 +1,120 @@
+.bibliography {
+
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 20px 10px rgba(0, 0, 0, 0.051);
+  padding: 18px 43px 92px;
+
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.citationStyle {
+  background-color: #e3e3e3;
+  border-radius: 10px;
+  padding: 14px 70px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #707070;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.161);
+}
+
+.title {
+  font-size: 35px;
+  font-weight: 300;
+  color: #707070;
+}
+
+.sectionTitle {
+  font-size: 20px;
+  font-weight: 500;
+  color: #707070;
+  text-align: right;
+  margin: 45px 0 30px;
+}
+
+.readingList {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.bibliographyItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  flex-direction: row-reverse;
+
+}
+
+.actions {
+  display: flex;
+  gap: 22px;
+}
+
+.actionButton {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.actionButton img {
+  width: 24px;
+  height: 24px;
+}
+
+.citation {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  flex-grow: 1;
+}
+.citationItem{
+  display: flex;
+  flex-direction: row;
+}
+.citationText {
+  font-size: 20px;
+  line-height: 1.1;
+  letter-spacing: 0.67px;
+  color: #707070;
+  text-align: right;
+  flex-grow: 1;
+}
+
+.number {
+  font-size: 20px;
+  line-height: 3;
+  /*letter-spacing: 0.19px;*/
+  color: #707070;
+  margin-left: 5px;
+}
+
+.divider {
+  height: 1px;
+  background-color: #e3e3e3;
+  margin-right: 3%;
+  width: 104%;
+}
+.indicator {
+  background-color: #e3e3e3;
+  height: 2px;
+  width: 100%;
+  margin: 21px 0;
+}
+
+@media (max-width: 991px) {
+  .bibliography {
+    padding: 18px 20px 92px;
+  }
+
+  .citationStyle {
+    padding: 14px 30px;
+  }
+}
