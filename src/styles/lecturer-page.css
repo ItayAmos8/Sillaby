@@ -1,9 +1,9 @@
-/*!* עיצוב כללי *!*/
+
 
 body {
     direction: rtl;
     margin: 0;
-
+    height: 100vh;
     font-family: Arial, sans-serif;
     color: #707070;
     background-color: #b8c2cc;
@@ -12,10 +12,9 @@ body {
 .container {
     display: flex;
     width: 100%;
-    height: 100vh;
+    height: 100%;
 }
 
-/*!* סרגל עליון *!*/
 .navbar {
     background-color: #555;
     padding: 10px;
@@ -23,7 +22,6 @@ body {
 
 }
 
-/*!* כותרת ראשית *!*/
 .header {
     display: flex;
     align-items: center;
@@ -33,7 +31,6 @@ body {
     justify-content: flex-end;
 }
 
-/*!* שדות חיפוש וסינון *!*/
 .filters {
     display: flex;
     position: relative;
@@ -53,17 +50,13 @@ body {
     border-radius: 5px;
 }
 
-/*!* כרטיסי סילבוס *!*/
 .cards-container {
     /* Group 581 */
 
     margin-top: 50px;
 
-    /*position: absolute;*/
     width: 1322px;
     height: 80px;
-    /*left: 173px;*/
-    /*top: 566px;*/
 
 
 }
@@ -228,7 +221,6 @@ body {
 
 }
 
-/*!* Responsive styles *!*/
 
 /* Tablets */
 @media (max-width: 768px) {

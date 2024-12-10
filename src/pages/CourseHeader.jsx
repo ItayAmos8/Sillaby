@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "../styles/CourseHeader.module.css";
-
+import grayCircle from "../assets/gray_circle.png"
 export const CourseHeader = ({ courseCode, courseName, faculty, status }) => {
     return (
         <header className={styles.header}>
@@ -18,6 +18,9 @@ export const CourseHeader = ({ courseCode, courseName, faculty, status }) => {
                 <div className={styles.courseDetails}>
                     <span className={styles.statusBadge}>{status}</span>
                     {/*TODO:/!*<div className={styles.circularDivider}/>*!/*/}
+                    <span >
+                    <img className={styles.gray} src = {grayCircle} alt="asdads"></img>
+                    </span>
                     <span className={styles.facultyName}>{faculty}</span>
                     <div className={styles.divider}/>
                     <span className={styles.courseName}>{courseName}</span>

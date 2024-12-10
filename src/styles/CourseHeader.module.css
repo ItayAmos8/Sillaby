@@ -1,12 +1,10 @@
 /* העיצוב הכללי של הכותרת */
 .header {
-    align-items: center;
     display: flex;
     flex-direction: column; /* כותרת למעלה, שאר המידע למטה */
     background-color: #c9c9c9;
     box-shadow: 0 20px 10px rgba(0, 0, 0, 0.051);
-    /*padding: 15px 0 8px;*/
-    /*width: 100%;*/
+    padding-right: 100px;
 }
 
 /* החלק העליון - כותרת */
@@ -14,14 +12,15 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    /*margin-bottom: 10px;*/
 }
 
 .titleText {
     font-size: 18px;
     font-weight: bold;
     color: #555;
+    margin-right: 220px;
 }
+
 
 .titleIcon {
     width: 16px;
@@ -59,26 +58,17 @@
     height: 35px;
     background-color: #a09f9f; /* צבע הקו המפריד */
 }
-
-/* תגית סטטוס */
-.statusBadge {
-    background-color: #707070;
-    color: #fff;
-    border-radius: 15px;
-    padding: 5px 20px;
-    font-size: 14px;
-    font-weight: 500;
-}
-
 .facultyInfo {
     display: flex;
     align-items: center;
     gap: 8px;
 }
-
+.gray{
+    width: 20px;
+    height: 20px;
+}
 
 .titleIcon {
-
     width: 20px; /* גודל האייקון */
     object-fit: contain; /* מבטיח שהאייקון יוצג במלואו */
 }
@@ -89,7 +79,9 @@
     border-radius: 30px;
     padding: 3px 38px;
     font-weight: 500;
+    font-size: 25px;
     letter-spacing: 0.83px;
+    margin-bottom: 8px;
 }
 
 
