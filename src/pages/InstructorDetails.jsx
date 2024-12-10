@@ -3,7 +3,7 @@ import styles from "../styles/InstructorDetails.module.css";
 
 export const InstructorDetails = ({ email, name, officeHours, schedule }) => {
   return (
-    <section id="instructorDetails" className={styles.instructorSection}>
+    <section className={styles.instructorSection}>
       <h2 className={styles.sectionTitle}>פרטי המרצה</h2>
       <div className={styles.detailsContainer}>
         <div className={styles.contactInfo}>

@@ -1,86 +1,35 @@
 .pageContainer {
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
   background-color: #f0f0f0;
-
-}
-
-.content {
-  display: flex;
-  margin-top: 100px;
-}
-
-/* תפריט צדדי */
-.sideMenu {
-
-  position: sticky;
-  /*top: 20px;*/
-  width: 200px;
-  height: fit-content;
-  padding: 0;
-  text-align: center;
-  margin-top: 20px;
-  margin-right: 20px;
-  margin-left: 100px;
-}
-
-.imageContainer {
-  position: relative;
-}
-
-.menuImage {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-/* שכבת הקישורים שמכסה את התמונה */
-.linkOverlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  list-style: none;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  min-height: 100vh;
+  padding: 52px 0;
 }
 
-.linkOverlay li {
-  flex: 1;
-  position: relative;
-}
-
-.linkOverlay a {
-  display: block;
+.mainContent {
+  max-width: 1365px;
+  margin: 0 auto;
   width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0; /* הופך את הקישורים לבלתי נראים אך עדיין לחיצים */
+  padding: 0 20px;
+}
+
+.submitButton {
+  background-color: #23c74f;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 30px;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 50px auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
   cursor: pointer;
 }
 
-/* עיצוב התוכן */
-.mainContent {
-  flex: 1;
-  /*padding: 20px;*/
-  margin-right: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.section {
-  padding-bottom: 50px;
-  border-bottom: 1px solid #ddd;
-}
-
-.section h2 {
-  margin-bottom: 20px;
-  font-size: 24px;
+@media (max-width: 991px) {
+  .pageContainer {
+    padding-bottom: 100px;
+  }
 }

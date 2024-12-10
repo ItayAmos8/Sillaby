@@ -1,6 +1,5 @@
 .container {
     display: flex;
-
     align-items: center;
     gap: 40px 75px;
     font-family: Rubik, sans-serif;
